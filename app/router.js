@@ -12,6 +12,7 @@ Router.map(function () {
   this.route('users');
   this.route('favorites');
   this.route('repos');
+  this.route('search');
 });
 
 export default Router;
