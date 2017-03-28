@@ -1,7 +1,10 @@
-import Ember from 'ember'
+import Ember from 'ember';
 
 export default Ember.Route.extend({
   model: function(){
-    return ['repo1', 'repo2', 'repo3'];
+    let url = 'https://api.github.com/';
+    return Ember.$.getJSON(url).then(function(data){
+      return data;
+    });
   }
 });
