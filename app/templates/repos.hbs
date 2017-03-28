@@ -1,3 +1,11 @@
+<h1>Search Github for any keyword:</h1>
+<form {{action 'submitAction'}}>
+  <p>
+    {{input value=search}}
+  </p>
+  {{!-- <button type="submit">Search</button> --}}
+  {{#link-to 'repos' type='button' class="btn btn-primary"}}Search{{/link-to}}
+</form>
 <h1>Here are the Respositories that match your Search:</h1>
 <ul>
 {{#each repo in model}}

@@ -3,5 +3,6 @@
   <p>
     {{input value=search}}
   </p>
-  <button type="submit">Search</button>
+  {{!-- <button type="submit">Search</button> --}}
+  {{#link-to 'repos' type='button' class="btn btn-primary"}}Search{{/link-to}}
 </form>
