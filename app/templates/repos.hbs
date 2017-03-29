@@ -16,8 +16,12 @@
 {{log model.totalCount}}
 
 {{#each model.items as |links|}}
-<h5>{{links.full_name}}</h5>
+<h1><a href={{links.html_url}}>{{links.full_name}}</a></h1>
 <h5>Language: {{links.language}}</h5>
-<a href={{links.html_url}}>{{links.html_url}}</a>
+<h5>Score: {{links.score}}</h5>
+<h5>Number of Forks: {{links.forks}}</h5>
+<h5>Description: {{links.description}}</h5>
+{{!-- <a href={{links.html_url}}>{{links.full_name}}</a> --}}
+<button type="submit" class="btn btn-primary" {{action 'save'}}>Add to Favorites</button>
 <br>
 {{/each}}
