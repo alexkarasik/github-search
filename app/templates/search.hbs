@@ -1,8 +1,15 @@
-<h1>Search github for any keyword:</h1>
+{{!-- <h1>Search github for any keyword:</h1>
 <form {{action 'submitAction'}}>
   <p>
     {{input value=search}}
-  </p>
+  </p> --}}
   {{!-- <button type="submit">Search</button> --}}
-  {{#link-to 'repos' type='button' class="btn btn-primary"}}Search{{/link-to}}
-</form>
+  {{!-- {{#link-to 'repos' type='button' class="btn btn-primary"}}Search{{/link-to}}
+</form> --}}
+
+
+<h3>Enter Your Search Here</h3>
+{{search-result
+  search=search
+  mySearch="mySearch"
+}}

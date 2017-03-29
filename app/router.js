@@ -11,7 +11,7 @@ Router.map(function () {
   this.route('change-password');
   this.route('users');
   this.route('favorites');
-  this.route('repos');
+  this.route('repos', {path: '/search/:repos'});
   this.route('search');
 });
 
