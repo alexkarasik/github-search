@@ -12,7 +12,11 @@ Router.map(function () {
   this.route('users');
   this.route('favorites');
   this.route('repos', {path: '/search/:repos'});
-  this.route('search');
+
+
+
+      this.route('search');
+
 });
 
 export default Router;
