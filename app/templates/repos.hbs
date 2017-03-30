@@ -16,6 +16,7 @@
 {{log model.totalCount}}
 
 {{#each model.items as |links|}}
+<div class="wrap">
 <h1><a href={{links.html_url}}>{{links.full_name}}</a></h1>
 <h5>Language: {{links.language}}</h5>
 <h5>Score: {{links.score}}</h5>
@@ -24,4 +25,5 @@
 {{!-- <a href={{links.html_url}}>{{links.full_name}}</a> --}}
 <button type="submit" class="btn btn-primary" {{action 'save'}}>Add to Favorites</button>
 <br>
+</div>
 {{/each}}
