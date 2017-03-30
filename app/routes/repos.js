@@ -7,4 +7,9 @@ export default Ember.Route.extend({
       return data;
     });
   },
+  save(repo) {
+    console.log('repos route');
+    repo.save();
+  }
+
 });

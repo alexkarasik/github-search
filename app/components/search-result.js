@@ -6,7 +6,7 @@ export default Ember.Component.extend({
       this.sendAction('mySearch', this.get('search'));
     },
     save(data){
-      this.transitionTo('favorites', this.get(data));
+      this.sendAction('save', this.get(data));
     }
   }
 });
