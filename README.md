@@ -28,5 +28,3 @@ I realized how similair Rails and Ember are to each other in many ways and I def
 
 ## Unsolved Problems
 I want to add comments to these Repositories that users add to their Favorites list and have users be able to edit and delete these comments. I think this will be relaticely easy to do after some of my experiences on this project and my past experience with this kind of CRUDing in previous projects.
-
-##
