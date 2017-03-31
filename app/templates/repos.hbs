@@ -16,14 +16,5 @@
 {{log model.totalCount}}
 
 {{#each model.items as |links|}}
-<div class="wrap">
-<h1><a href={{links.html_url}}>{{links.full_name}}</a></h1>
-<h5>Language: {{links.language}}</h5>
-<h5>Score: {{links.score}}</h5>
-<h5>Number of Forks: {{links.forks}}</h5>
-<h5>Description: {{links.description}}</h5>
-{{!-- <a href={{links.html_url}}>{{links.full_name}}</a> --}}
-<button type="submit" class="btn btn-primary" {{action 'save'}}>Add to Favorites</button>
-<br>
-</div>
+  {{repo-card links=links favorite='favorite'}}
 {{/each}}
