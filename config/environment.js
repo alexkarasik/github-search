@@ -49,7 +49,7 @@ module.exports = function (environment) {
   }
 
   if (environment === 'production') {
-    ENV.rootUrl = 'https://github.com/alexkarasik/github-search';
+    ENV.rootUrl = '/github-search';
     ENV.locationType = 'hash';
     ENV.apiHost = 'https://alexkarasik.github.io/github-search/';
   }
