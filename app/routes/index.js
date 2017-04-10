@@ -7,7 +7,7 @@ export default Ember.Route.extend({
   // },
   actions: {
     mySearch(search) {
-      this.get('ajax').request(`/searches/${search}`)
+      this.get('ajax').request(`searches/${search}`)
       .then((data) =>{
         console.log(data);
         return this.transitionTo('repos', data);

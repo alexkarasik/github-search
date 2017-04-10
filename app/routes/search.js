@@ -12,13 +12,13 @@ export default Ember.Route.extend({
         console.log(data);
         return this.transitionTo('repos', data);
       });
-    },
-    save(search) {
-      this.get('ajax').request(`/searches/${search}`)
-      .then((data) =>{
-        console.log(data);
-        return this.transitionTo('favorites', data);
-      });
-},
-  }
+//     },
+//     // save(search) {
+//     //   this.get('ajax').request(`/searches/${search}`)
+//     //   .then((data) =>{
+//     //     console.log(data);
+//     //     return this.transitionTo('favorites', data);
+//     //   });
+ },
+ }
 });
