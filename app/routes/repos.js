@@ -9,20 +9,6 @@ export default Ember.Route.extend({
     });
   },
   actions: {
-    favorite(links) {
-      this.get('ajax').request(`/bookmarked_repos`, {
-        method: 'POST',
-        data: {
-          links: {
-            title: "${links.title}",
-            language: "${links.language}",
-            score: "${links.score}",
-            forks: "${links.forks}",
-            description: "${links.description}"
-          }
-        }
-      });
-      return this.transitionTo('favorites');
-    }
+
   }
 });
