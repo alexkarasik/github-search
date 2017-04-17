@@ -52,7 +52,7 @@ module.exports = function (environment) {
   if (environment === 'production') {
     ENV.rootURL = '/github-search';
     ENV.locationType = 'hash';
-    ENV.apiHost = 'https://alexkarasik.github.io/github-search/';
+    ENV.apiHost = 'https://sheltered-lake-27953.herokuapp.com/';
   }
 
   return ENV;
